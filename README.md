@@ -5,7 +5,49 @@ The purpose of this project is to analyze medical research articles while simult
 
 For this project I have fetched PUBMED articles as a source of my biomedical research papers. 
 # Disclaimer
-This tool is a streamlit web-app which is built for internal reference and is in the state of further developments with broader use-case. 
+This tool is a streamlit web-app which is built for internal reference and is in the state of further developments with broader use-case.
+# Run the web-app
+1. First, you need to download the compressed file in GitHub.
+2. Uncompress it and change to the directory cd:
+```
+  unzip Document-Analysis.zip
+  cd Document-Analysis/
+```
+3. It is highly recommended to create conda or python virtual environment and install the aforementioned dependencies within such environment (OPTIONAL):
+- Creating conda virtual environment, please change "your_env_name" your desire environment name:
+```
+conda create -n your_env_name
+conda activate your_env_name
+```
+- Creating python virtual environment:
+```
+pip install virtualenv
+virtualenv your_env_name
+source your_env_name/bin/activate
+```
+- Note: don't forget to de-activate your environment once you are completely done running the module:
+```
+# for conda env
+conda deactivate
+# for python env
+deactivate
+```
+4. You may now try to install the dependencies by running the following command:
+```
+sudo pip install -r requirements.txt
+```
+5. You will be prompted to enter a password if you run the sudo command, the password is the root password (system administrator) of the computer you are currently running.
+6. Please make sure you are in the same directory location as the module main.py, and you may try to check the presence of the module by running the following command:
+```
+ls -ltrh *.py  
+```
+7. In the terminal, mention:
+```
+streamlit run main.py
+```
+You will be provided with a local host address and a network host address.
+Clicking over the links will take you through the web-app
+
 # Overview of the tool
 ![image](https://user-images.githubusercontent.com/130223304/235496619-7563cd5a-d943-4383-8b2d-e0f2f166a1ec.png)
 The Document Analysis has few subsections i.e 
